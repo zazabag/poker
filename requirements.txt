@@ -1,0 +1,6 @@
+aiogram>=3.0.0
+fastapi
+uvicorn
+python-dotenv
+jinja2
+aiohttp
