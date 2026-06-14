@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>BLACKWOOD POKER CLUB</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">♠</div>
+                <div class="logo-text">
+                    <div class="logo-title">BLACKWOOD</div>
+                    <div class="logo-subtitle">POKER CLUB</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <button class="nav-btn active" data-page="home">Главная</button>
+            <button class="nav-btn" data-page="tournaments">Турниры</button>
+            <button class="nav-btn" data-page="leaderboard">Топ</button>
+            <button class="nav-btn" data-page="profile">Профиль</button>
+        </nav>
+
+        <!-- Pages -->
+        <main class="main">
+            <!-- Home Page -->
+            <section id="page-home" class="page active">
+                <div class="hero">
+                    <div class="hero-label">БЛИЖАЙШИЙ ТУРНИР</div>
+                    <h1 id="next-tournament-title">Загрузка...</h1>
+                    <div class="hero-info">
+                        <span id="next-tournament-date">--</span>
+                        <span id="next-tournament-time">--</span>
+                    </div>
+                    <div class="hero-meta">
+                        <span class="tag">♠ Texas Hold'em Classic</span>
+                        <span class="tag">Вход бесплатный</span>
+                    </div>
+                    <div class="hero-seats">
+                        <span id="seats-info">Мест: -- / --</span>
+                        <div class="seats-bar"><div id="seats-fill"></div></div>
+                    </div>
+                    <button class="btn-gold" id="btn-register-main">Записаться</button>
+                </div>
+
+                <div class="section-title">📋 Новости</div>
+                <div class="news-list">
+                    <div class="news-card">
+                        <div class="news-date">14 ИЮН</div>
+                        <div class="news-text">Открытие нового клуба! Приходи на бесплатный турнир.</div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-date">15 ИЮН</div>
+                        <div class="news-text">Re-Entry: 1500₽ | Add-on: 3000₽. Welcome drink и кальяны.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tournaments Page -->
+            <section id="page-tournaments" class="page">
+                <h2 class="page-title">Турниры</h2>
+                <div id="tournaments-list" class="cards-list"></div>
+            </section>
+
+            <!-- Leaderboard Page -->
+            <section id="page-leaderboard" class="page">
+                <h2 class="page-title">🏆 Лидерборд</h2>
+                <div id="leaderboard-list" class="leaderboard"></div>
+            </section>
+
+            <!-- Profile Page -->
+            <section id="page-profile" class="page">
+                <h2 class="page-title">👤 Профиль</h2>
+                <div id="profile-info" class="profile-card">
+                    <div class="profile-avatar">🃏</div>
+                    <div class="profile-name" id="profile-name">Игрок</div>
+                    <div class="profile-id" id="profile-id">ID: --</div>
+                </div>
+                <div class="stats-grid" id="stats-grid">
+                    <div class="stat-box"><div class="stat-value" id="stat-games">0</div><div class="stat-label">Игр</div></div>
+                    <div class="stat-box"><div class="stat-value" id="stat-points">0</div><div class="stat-label">Очков</div></div>
+                    <div class="stat-box"><div class="stat-value" id="stat-wins">0</div><div class="stat-label">Побед</div></div>
+                    <div class="stat-box"><div class="stat-value" id="stat-finals">0</div><div class="stat-label">Финалов</div></div>
+                </div>
+                <div class="section-title">История</div>
+                <div id="history-list" class="history-list"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

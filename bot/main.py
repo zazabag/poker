@@ -9,7 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from database import db
 
 BOT_TOKEN = "8919857648:AAEF19yjCIA-u54uYuMGMONTq-l6ehdUEXY"
-WEBAPP_URL = "https://blackwood-poker-app.pages.dev"  # placeholder
+WEBAPP_URL = "https://zazabag.github.io/poker/"
 
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher()
