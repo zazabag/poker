@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000';
+const API_URL = 'https://poker-wans.onrender.com';
 let currentUser = null;
 let tg = window.Telegram?.WebApp;
 
